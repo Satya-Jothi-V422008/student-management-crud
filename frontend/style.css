@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.form-card,
+.student-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    display: grid;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+#submitBtn {
+    background: #222;
+    color: white;
+}
+
+.cancel {
+    background: #ddd;
+    margin-left: 8px;
+}
+
+#message {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.student-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.student-header input {
+    max-width: 300px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background: #f0f2f4;
+}
+
+.action-btn {
+    padding: 7px 12px;
+    margin: 2px;
+}
+
+.edit-btn {
+    background: #ddd;
+}
+
+.delete-btn {
+    background: #222;
+    color: white;
+}
+
+#emptyMessage {
+    text-align: center;
+    color: #777;
+    padding: 20px;
+}
+
+@media (max-width: 800px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .student-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .student-header input {
+        max-width: none;
+    }
+
+    .student-card {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 800px;
+    }
+}
